@@ -8,6 +8,7 @@ import {store} from "./store/store.ts";
 import Signup from "./pages/SignUp.tsx";
 import SignIn from "./pages/SignIn.tsx";
 import Dashboard from "./pages/Dashboard.tsx";
+import TaskManagement from "./pages/TaskManagement.tsx";
 
 function App() {
     const routes=createBrowserRouter([
@@ -18,6 +19,7 @@ function App() {
                 { path: "/signin", element: <SignIn /> },
                 { path: "", element: <Signup /> },
                 { path: "/Dashboard", element: <Dashboard /> },
+                {path: "/task-management", element: <TaskManagement />}
             ],
         },
 

@@ -3,6 +3,7 @@ import axios from 'axios';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { UserIcon, AtSymbolIcon, IdentificationIcon, CalendarDaysIcon, ClockIcon } from '@heroicons/react/24/outline';
+import {useNavigate} from "react-router-dom";
 
 interface User {
     id: string;
@@ -16,6 +17,7 @@ const Dashboard: React.FC = () => {
     const [currentDate, setCurrentDate] = useState<Date>(new Date());
     const [nameInput, setNameInput] = useState('');
     const [emailInput, setEmailInput] = useState('');
+    const navigate = useNavigate();
 
     const token = localStorage.getItem('token');
 
@@ -164,6 +166,12 @@ const Dashboard: React.FC = () => {
                         onChange={(date: Date) => setCurrentDate(date)}
                     />
                 </div>
+                <button
+                    onClick={() => navigate('/task-management')}
+                    className="mt-4 bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded"
+                >
+                    Go to Task Management
+                </button>
             </div>
         </div>
     );

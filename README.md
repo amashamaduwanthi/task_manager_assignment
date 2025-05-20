@@ -8,6 +8,7 @@
 - State managed using React Hooks
 - Accessibility and UX best practices
 - Organized file structure and comments
+- task management crud
 
 ### ✅ Backend
 
@@ -18,6 +19,7 @@
 - Protected **account route** with proper access control
 - Full error handling and modular route/controller structure
 - Create User,Update User,Delete User 
+- task management crud
 
 ---
 
@@ -62,14 +64,7 @@
 
 - dotenv
 
-### 🧠 Purpose of Two implement frontend
-## frontend/
-- This is the UI recreation based on the image provided in the assignment using React + Tailwind CSS. No backend connection.
-
-### assignment_frontend/
-- This is the frontend that implements the login functionality and connects to the backend to retrieve a JWT and display protected account data.
-
-### git clone https://github.com/amashamaduwanthi/mandadev_take_home_assignment.git
+### git clone https://github.com/amashamaduwanthi/task_manager_assignment.git
 
 
 

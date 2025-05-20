@@ -5,6 +5,7 @@ const loginRoutes = require('./routes/login');
 const accountRoutes = require('./routes/account');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
+const taskRoutes = require('./routes/Task');
 const app = express();
 const port = process.env.PORT || 5000;
 const connectDB = require('./config/db');
@@ -32,6 +33,7 @@ app.use('/api/login', loginRoutes);
 app.use('/api/account', accountRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/user',userRoutes)
+app.use('/api/task', taskRoutes);
 
 // Basic route
 app.get('/', (req, res) => {
